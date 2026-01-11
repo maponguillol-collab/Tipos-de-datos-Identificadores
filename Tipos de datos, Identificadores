@@ -1,0 +1,39 @@
+"""
+Programa: Conversor de Temperatura
+Descripción: Este programa convierte una temperatura de grados Celsius a Fahrenheit.
+Autor: Miluska
+Fecha: [Fecha de entrega]
+"""
+
+def convertir_celsius_a_fahrenheit(celsius):
+    """
+    Convierte grados Celsius a Fahrenheit.
+    """
+    fahrenheit = (celsius * 9 / 5) + 32
+    return fahrenheit
+
+
+# Variable booleana para controlar el programa
+ejecutar_programa = True
+
+print("=== Conversor de Celsius a Fahrenheit ===")
+
+# Nombre definido directamente en el programa (string)
+nombre_usuario = "Miluska"
+
+# Temperatura definida por el programa (float)
+temperatura_celsius = 25.0
+
+while ejecutar_programa:
+    # Llamar a la función de conversión
+    temperatura_fahrenheit = convertir_celsius_a_fahrenheit(temperatura_celsius)
+
+    # Mostrar resultado
+    print(f"{nombre_usuario}, la temperatura de {temperatura_celsius} °C en Fahrenheit es: {temperatura_fahrenheit:.2f} °F")
+
+    # Opción definida para finalizar el programa (int)
+    opcion = 0
+
+    if opcion == 0:
+        ejecutar_programa = False
+        print("Programa finalizado. ¡Gracias por usar el conversor!")
